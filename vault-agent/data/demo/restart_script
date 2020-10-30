@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export LOG=/data/demo/log
+
+DATE=$(/bin/date "+%Y-%m-%d %T %Z")
+
+echo "${DATE} ${HOST} - consul-template restarted webserver" >> ${LOG}
+
+exit 0
+
